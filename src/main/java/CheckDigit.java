@@ -11,7 +11,7 @@ public class CheckDigit
      int factor = 7;
      int currentDigit = 1;
      while(num != 0 && factor >= 2) {
-       sum += factor*getDigitnum, currentDigit);
+       sum += factor*getDigit(num, currentDigit);
        factor -= 1;
        currentDigit +=1 ;
      }
