@@ -15,7 +15,7 @@ public class CheckDigit
        factor -= 1;
        currentDigit +=1 ;
      }
-     return sum;
+     return sum%10;
    }
  
   /** Returns true if numWithCheckDigit is valid, or false    
