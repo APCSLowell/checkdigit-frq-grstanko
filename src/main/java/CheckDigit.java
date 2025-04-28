@@ -7,7 +7,15 @@ public class CheckDigit
    */  
    public static int getCheck(int num) 
    {  
-     /* to be implemented in part (a) */
+     int sum = 0;
+     int factor = 7;
+     int currentDigit = 1;
+     while(num != 0 && factor >= 2) {
+       sum += factor*getDigitnum, currentDigit);
+       factor -= 1;
+       currentDigit +=1 ;
+     }
+     return sum;
    }
  
   /** Returns true if numWithCheckDigit is valid, or false    
@@ -18,7 +26,9 @@ public class CheckDigit
    */     
    public static boolean isValid(int numWithCheckDigit)    
    {      
-     /* to be implemented in part (b) */    
+     int check = numWithCheckDigit % 10;
+     int num = numWithCheckDigit / 10;
+     return check == getCheck(num);
    }    
    
    /** Returns the number of digits in num. */    
